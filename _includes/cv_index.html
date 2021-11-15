@@ -1,0 +1,51 @@
+<div id="mainbox">
+    <div class="cv-section">
+        <h1><span class="material-icons">school</span>&nbsp;&nbsp;Education <span onclick="collapse()" id="edu" class="collapse"></span></h1>
+            <div class="content-edu">
+            <div class="bluebox">
+                <p style="font-weight:bold;">MMath (Hons) in Mathematics (1st)</p>
+                <p><span class="material-icons">location_on</span> University of Nottingham, Schools of Mathematical Sciences</p>
+                <p><span class="material-icons">date_range</span> Sept 2017 - June 2021</p>
+            </div>
+            </div>
+    </div>
+    <div class="cv-section">
+        <h1><span class="material-icons">engineering</span>&nbsp;&nbsp;Employment <span onclick="collapse()" id="employment" class="collapse"></span></h1>
+            <div class="content-employment">
+                <p>bingo bango bongo</p>
+            </div>
+    </div>
+    <div class="cv-section">
+        <h1><span class="material-icons">auto_awesome</span>&nbsp;&nbsp;Skills <span onclick="collapse()" id="skills" class="collapse"></span></h1>
+            <div class="content-skills">
+                <p>bingo bango bongo</p>
+            </div>
+    </div>
+    <div class="cv-section">
+        <h1><span class="material-icons">interests</span>&nbsp;&nbsp;Interests <span onclick="collapse()" id="interests" class="collapse"></span></h1>
+            <div class="content-interests">
+                <p>bingo bango bongo</p>
+            </div>
+    </div>
+    <div class="cv-section">
+        <h1><span class="material-icons">history_edu</span>&nbsp;&nbsp;Certificates <span onclick="collapse()" id="cert" class="collapse"></span></h1>
+            <div class="content-cert">
+                <p>bingo bango bongo</p>
+            </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+    function collapse() {
+        event.target.classList.toggle("active");
+        var id = event.target.id;
+        // console.log(id);
+        var section = document.getElementsByClassName('content-' + id)[0];
+        // console.log(section);
+        if (section.style.maxHeight){
+            section.style.maxHeight = null;
+        } else {
+            section.style.maxHeight = section.scrollHeight + "px";
+        }
+    }
+</script>

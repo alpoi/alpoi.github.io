@@ -1,5 +1,4 @@
 html{
-    /* background: radial-gradient(ellipse at bottom, #3A3637 0%, #131112 100%) fixed; */
     background: #23212C;
 }
 
@@ -9,7 +8,7 @@ body{
 
 ul#nav{
     color: #fff;
-    margin: 30px 20% 0px 20%;
+    margin: 30px 20% 30px 20%;
     overflow: hidden;
     list-style-type: none;
     background-color: #272525;
@@ -20,7 +19,7 @@ ul#nav{
 #mainbox{
     display:block;
     color:#000;
-    margin: 0px 20% 0px 20%;
+    margin: 30px 20% 0px 20%;
     padding: 10px 20px 50px 20px;
     text-align:left;
     /* background-color:#272525; */
@@ -30,7 +29,7 @@ ul#nav{
 }
 
 #footer{
-    /* display:block; */
+    display:block;
     color:#524e4e;
     margin: 30px 20% 30px 20%;
     padding: 10px 20px 10px 20px;
@@ -66,29 +65,38 @@ div.cv-section h1{
     margin-bottom: -5px;
 }
 
-.content-1{
+.content-edu{
     max-height: 0;
-    margin: 10px 0px 0px;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
 }
 
-.content-2{
+.content-employment{
     max-height: 0;
-    margin: 10px 0px 0px;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
 }
 
-.content-3{
+.content-skills{
     max-height: 0;
-    margin: 10px 0px 0px;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+.content-interests{
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+.content-cert{
+    max-height: 0;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
 }
 
 .collapse{
-    font-family: "Material Icons Outlined";
+    font-family: "Material Icons";
     cursor: pointer;
     float: right;
 }
@@ -119,8 +127,4 @@ div.bluebox {
 
 .material-icons {
     vertical-align: middle;
-}
-
-iframe{
-    width: 100%;
 }
