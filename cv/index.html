@@ -6,6 +6,17 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bree+Serif">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <script type="text/javascript">
+        function iframeLoaded() {
+            var iFrameID = document.getElementById('header');
+            if(iFrameID) {
+                  iFrameID.height = "";
+                  iFrameID.height = iFrameID.contentWindow.document.body.scrollHeight + "px";
+            }   
+        }
+      </script>
+
 </head>
 <body>
 
@@ -16,7 +27,7 @@ include "/header.php";
 ?> 
 -->
 <div id="header">
-<iframe scrolling="no" frameborder="0" border="0" cellspacing="0" src="/header.html" title="header" loading="eager"></iframe>
+<iframe onload="iframeLoaded()" scrolling="no" frameborder="0" border="0" cellspacing="0" src="/header.html" title="header" loading="eager"></iframe>
 </div>
 
 
