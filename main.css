@@ -131,3 +131,7 @@ div.bluebox {
 .material-icons {
     vertical-align: middle;
 }
+
+iframe{
+    width: 100%;
+}
