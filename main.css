@@ -9,7 +9,7 @@ body{
 
 ul#nav{
     color: #fff;
-    margin: 30px 20% 30px 20%;
+    margin: 30px 20% 0px 20%;
     overflow: hidden;
     list-style-type: none;
     background-color: #272525;
@@ -20,7 +20,7 @@ ul#nav{
 #mainbox{
     display:block;
     color:#000;
-    margin: 30px 20% 0px 20%;
+    margin: 0px 20% 0px 20%;
     padding: 10px 20px 50px 20px;
     text-align:left;
     /* background-color:#272525; */
@@ -66,40 +66,29 @@ div.cv-section h1{
     margin-bottom: -5px;
 }
 
-.content-edu{
+.content-1{
     max-height: 0;
+    margin: 10px 0px 0px;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
 }
 
-/*
-.content-employment{
+.content-2{
     max-height: 0;
+    margin: 10px 0px 0px;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
 }
 
-.content-skills{
+.content-3{
     max-height: 0;
+    margin: 10px 0px 0px;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
 }
-
-.content-interests{
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.2s ease-out;
-}
-
-.content-cert{
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.2s ease-out;
-}
-*/
 
 .collapse{
-    font-family: "Material Icons";
+    font-family: "Material Icons Outlined";
     cursor: pointer;
     float: right;
 }

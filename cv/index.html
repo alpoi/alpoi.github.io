@@ -5,18 +5,18 @@
     <link rel="stylesheet" href="/main.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bree+Serif">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined">
 
-    <script type="text/javascript">
+<!--   <script type="text/javascript">
         function iframeLoaded() {
-            var iFrameID = document.getElementById('header');
+            var iFrameID = document.getElementById('header_frame');
             if(iFrameID) {
                   iFrameID.height = "";
                   iFrameID.height = iFrameID.contentWindow.document.body.scrollHeight + "px";
             }   
         }
       </script>
-
+    -->
 </head>
 <body>
 
@@ -27,14 +27,24 @@ include "/header.php";
 ?> 
 -->
 <div id="header">
-<iframe onload="iframeLoaded()" scrolling="no" frameborder="0" border="0" cellspacing="0" src="/header.html" title="header" loading="eager"></iframe>
+<iframe scrolling="no" frameBorder="0" cellspacing="0" src="/header.html" title="header" loading="eager"></iframe>
 </div>
 
 
 <div id="mainbox">
     <div class="cv-section">
-        <h1><span class="material-icons">icon</span>Placeholder<span onclick="collapse()" id="edu" class="collapse"></span></h1>
-            <div class="content-edu">
+        <h1>&nbsp;<span class="material-icons-outlined">done</span>&nbsp;&nbsp;Placeholder <span onclick="collapse()" id="1" class="collapse"></span></h1>
+            <div class="content-1">stuff here
+            </div>
+    </div>
+    <div class="cv-section">
+        <h1>&nbsp;<span class="material-icons-outlined">done</span>&nbsp;&nbsp;Placeholder <span onclick="collapse()" id="2" class="collapse"></span></h1>
+            <div class="content-2">stuff here
+            </div>
+    </div>
+    <div class="cv-section">
+        <h1>&nbsp;<span class="material-icons-outlined">done</span>&nbsp;&nbsp;Placeholder <span onclick="collapse()" id="3" class="collapse"></span></h1>
+            <div class="content-3">stuff here
             </div>
     </div>
 </div>
@@ -54,7 +64,7 @@ include "/header.php";
     }
 </script>
 
-<iframe scrolling="no" frameborder="0" border="0" cellspacing="0" src="/footer.html" title="footer" loading="eager"></iframe>
+<iframe scrolling="no" frameBorder="0" cellspacing="0" src="/footer.html" title="footer" loading="eager"></iframe>
 
 <!--
 <?php
