@@ -1,5 +1,6 @@
 ---
 title: Angus Pointer - CV
+layout: null
 ---
 
 {% include header.html %}

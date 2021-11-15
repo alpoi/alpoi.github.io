@@ -1,5 +1,6 @@
 ---
 title: index
+layout: null
 ---
 
 {% include header.html %}
