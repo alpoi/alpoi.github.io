@@ -6,14 +6,84 @@ body{
     font-family: 'Roboto';
 }
 
+/* Borrowed from https://codepen.io/cbracco/pen/qzukg */
+[data-tooltip] { /* Add this attribute to the element that needs a tooltip */
+    position: relative;
+    z-index: 2;
+    cursor: pointer;
+}
+  
+[data-tooltip]:before,
+[data-tooltip]:after { /* Hide the tooltip content by default */
+    visibility: hidden;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=0);
+    opacity: 0;
+    pointer-events: none;
+}
+  
+[data-tooltip]:before { /* Position tooltip above the element */
+    position: absolute;
+    top: 150%;
+    /* bottom: 150%; */
+    left: 50%;
+    margin-bottom: 5px;
+    margin-left: -80px;
+    padding: 7px;
+    width: 160px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    background-color: #000;
+    background-color: hsla(0, 0%, 20%, 0.9);
+    color: #fff;
+    content: attr(data-tooltip);
+    text-align: center;
+    font-size: 14px;
+    line-height: 1.2;
+}
+  
+[data-tooltip]:after { /* Triangle hack to make tooltip look like a speech bubble */
+    position: absolute;
+    top: 150%;
+    /* bottom: 150%; */
+    left: 50%;
+    margin-left: -5px;
+    width: 0;
+    border-top: 5px solid #000;
+    border-top: 5px solid hsla(0, 0%, 20%, 0.9);
+    border-right: 5px solid transparent;
+    border-left: 5px solid transparent;
+    content: " ";
+    font-size: 0;
+    line-height: 0;
+}
+  
+[data-tooltip]:hover:before,
+[data-tooltip]:hover:after { /* Show tooltip content on hover */
+    visibility: visible;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=100);
+    opacity: 1;
+}
+
 ul#nav{
     color: #fff;
     margin: 30px 20% 30px 20%;
-    overflow: hidden;
+    /* overflow: hidden; */
     list-style-type: none;
     background-color: #272525;
     border-radius: 15px;
     /* border: 1px solid #efc000; */
+}
+
+#header{
+    display:block;
+    color:#524e4e;
+    margin: 30px 20% 30px 20%;
+    /* padding: 0px 20px 0px 20px; */
+    background-color:#272525;
+    border-radius: 15px;
 }
 
 #mainbox{
@@ -38,24 +108,38 @@ ul#nav{
     /* border: 1px solid #efc000; */
 }
 
-#footer a{
+#footer a:link, #footer a:visited{
     color: #3A3637;
 }
 
-#footer a:hover{
+#footer a:hover, #footer a:active{
     color: #efc000;
 }
 
-ul#nav li{
-    float: left;
-    display: block;
-    width: auto;
-    padding: 14px 16px;
+#header a{
+    display: inline-block;
+    padding: 10px 10px;
     text-align: center;
     list-style-type: none;
 }
 
-ul#nav li:hover{
+#header a:link, #header a:visited{
+    color: #fff;
+    text-decoration: none;
+}
+
+#header a:hover, #header a:active{
+    color: #efc000;
+    text-decoration: none;
+}
+
+#header a:first-child:hover{
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    color:#efc000;
+    background-color:#3A3637;
+}
+#header a:hover{
     color:#efc000;
     background-color:#3A3637;
 }
