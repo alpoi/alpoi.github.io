@@ -1,0 +1,16 @@
+body {
+    font-family: "Ubuntu", serif;
+    background-color: #23212C;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.splash{
+    text-align: center;
+    margin: 10% auto;
+    color: #C0C0C0;
+}
