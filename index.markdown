@@ -15,6 +15,6 @@ layout: null
     <div class="splash">
     <img src="honeybee_ios.png">
     <h1 style="margin-top: 50px">nothing here yet, sorry!</h1>
-    <a above-tooltip="Connect with me on LinkedIn" href="https://www.linkedin.com/in/alpointer/"><img src="linkedin-svg.svg"></a>
+    <a href="https://www.linkedin.com/in/alpointer/"><img src="linkedin-svg.svg"></a>
     </div>
     </div>
