@@ -1,16 +1,79 @@
 body {
     font-family: "Ubuntu", serif;
-    background-color: #23212C;
+    padding: 50px;
+    background-color: #1a1820;
 }
 
 .container{
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(autofit, minmax(250px, 1fr));
+    grid-gap: 10px;
     justify-content: center;
     align-items: center;
 }
 
 .splash{
     text-align: center;
-    margin: 10% auto;
+    background-color: #23212C;
+    border-radius: 5px;
+    /* margin: 10% auto; */
+    padding: 30px;
+    color: #c0c0c0;
+}
+
+p {
+    width: 250px;
+    min-width: 250px;
+}
+
+@keyframes wiggle {
+    0%      { transform: rotate(1deg);}
+    10%     { transform: rotate(-3deg);}
+    20%     { transform: rotate(6deg);}
+    30%     { transform: rotate(-12deg);}
+    40%     { transform: rotate(8deg);}
+    50%     { transform: rotate(-12deg);}
+    60%     { transform: rotate(6deg);}
+    70%     { transform: rotate(-3deg);}
+    80%     { transform: rotate(1deg);}
+    90%     { transform: none;}
+    100%    { transform: none;}
+}
+
+.wiggle {
+    animation-name: wiggle;
+    animation-duration: 2s;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+}
+
+a:link, a:active, a:visited {
     color: #C0C0C0;
+    text-decoration: none;
+}
+
+
+.links > a { /* borrowed from https://codepen.io/ryancolgin/pen/IBjla */
+    -moz-transition: all 0.1s ease-in;
+    -o-transition: all 0.1s ease-in;
+    -webkit-transition: all 0.1s ease-in;
+    transition: all 0.1s ease-in;
+}
+
+.links > a:hover { /* borrowed from https://codepen.io/ryancolgin/pen/IBjla */
+    color: #C0C0C0;
+    text-shadow:0px 0px 3px #C0C0C0;
+    -moz-transition: all 0.1s ease-in;
+    -o-transition: all 0.1s ease-in;
+    -webkit-transition: all 0.1s ease-in;
+    transition: all 0.1s ease-in;
+  }
+
+i {
+    font-size: 32px;
+    margin: 0 3px;
+}
+
+hr {
+    margin: 30px 5px;
 }

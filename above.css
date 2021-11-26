@@ -30,7 +30,7 @@
     border-radius: 3px;
     background-color: #000;
     background-color: hsla(0, 0%, 20%, 0.9);
-    color: #fff;
+    color: #c0c0c0;
     content: attr(above-tooltip);
     text-align: center;
     font-size: 14px;
