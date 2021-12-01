@@ -39,12 +39,34 @@ body {
     overflow-x: hidden;
 }
 
-.container{
-    display: grid;
-    grid-template-columns: repeat(4, 310px);
-    grid-gap: 10px;
-    justify-content: center;
-    align-items: center;
+@media screen and (min-width: 1300px){
+    .container {
+        display: grid;
+        grid-template-columns: repeat(4, 310px);
+        grid-gap: 10px;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media screen and (min-width: 650px) and (max-width: 1300px){
+    .container {
+        display: grid;
+        grid-template-columns: repeat(2, 310px);
+        grid-gap: 10px;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 650px){
+    .container {
+        display: grid;
+        grid-template-columns: repeat(1, 310px);
+        grid-gap: 10px;
+        justify-content:center;
+        align-items: center;
+    }
 }
 
 .box {
@@ -52,15 +74,26 @@ body {
     height: 660px;
     background-color: #23212C;
     border-radius: 5px;
-    margin-top: 10%;
     padding: 30px;
     color: #c0c0c0;
     animation: slidein 0.5s ease-out;
     transition: 0.25s;
 }
 
-.box:hover {
-    margin-top: 3%;
+@media screen and (min-width: 1300px){
+    .box {
+        margin-top: 10%
+    }
+
+    .box:hover {
+        margin-top: 3%;
+    }
+}
+
+@media screen and not (min-width: 1300px){
+    .box{
+        margin-top: 0%;
+    }
 }
 
 .b {
