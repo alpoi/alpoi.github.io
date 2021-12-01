@@ -34,8 +34,9 @@
 
 body {
     font-family: "Ubuntu", serif;
-    padding: 50px;
+    /* padding: 50px; */
     background-color: #1a1820;
+    margin-bottom: 50px;
     overflow-x: hidden;
 }
 
@@ -47,6 +48,7 @@ body {
         justify-content: center;
         align-items: center;
     }
+
 }
 
 @media screen and (min-width: 650px) and (max-width: 1300px){
@@ -67,6 +69,7 @@ body {
         justify-content:center;
         align-items: center;
     }
+
 }
 
 .box {
@@ -94,6 +97,7 @@ body {
     .box{
         margin-top: 0%;
     }
+
 }
 
 .b {
@@ -162,4 +166,24 @@ i {
 
 hr {
     margin: 30px 5px;
+}
+
+.top-mobile-fade {
+    height: 50px;
+    padding-bottom: -50px;
+    width: 100%;
+    z-index: 2;
+    position: -webkit-sticky;
+    position: sticky;
+    background: linear-gradient(rgba(26, 24, 32, 1),rgba(26, 24, 32, 0));
+    top: 0;
+}
+
+.bot-mobile-fade {
+    height: 50px;
+    width: 100%;
+    z-index: 2;
+    position: fixed;
+    bottom: 0;
+    background: linear-gradient(rgba(26, 24, 32, 0),rgba(26, 24, 32, 1));
 }

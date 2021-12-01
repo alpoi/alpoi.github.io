@@ -6,12 +6,14 @@ layout: null
 <html>
 <head>
     <title>Portfolio - Angus Pointer</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:wght@300">
     <link rel="stylesheet" href="splash.css">
     <link rel="stylesheet" href="above.css">
     <link rel="stylesheet" href="icons/css/all.css">
 </head>
 <body>
+<div class="top-mobile-fade"></div>
     <div class="container">
         <div class="box a">
         <img src="honeybee_ios.png">
@@ -23,9 +25,9 @@ layout: null
         <span class="wiggle"><a above-tooltip="Click to read my dissertation!" href="dissertation.pdf"><i class="fas fa-graduation-cap wiggle"></i></a></span>
         <hr>
             <div class="links">
-                <a href="https://www.linkedin.com/in/alpointer/"><i class="fab fa-linkedin"></i></a>
-                <a href="https://github.com/alpoi/"><i class="fab fa-github-square"></i></a>
-                <a href="mailto:al.pointer@outlook.com"><i class="fas fa-envelope-square"></i></a>
+                <a above-tooltip="Connect on LinkedIn" href="https://www.linkedin.com/in/alpointer/"><i class="fab fa-linkedin"></i></a>
+                <a above-tooltip="GitHub" href="https://github.com/alpoi/"><i class="fab fa-github-square"></i></a>
+                <a above-tooltip="e-mail" href="mailto:al.pointer@outlook.com"><i class="fas fa-envelope-square"></i></a>
             </div>
         </div>
         <div class="box b">
@@ -38,3 +40,6 @@ layout: null
         <h1></h1>
         </div>
     </div>
+    <div class="bot-mobile-fade"></div>
+    </body>
+    </html>
