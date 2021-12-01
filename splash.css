@@ -1,31 +1,3 @@
-body {
-    font-family: "Ubuntu", serif;
-    padding: 50px;
-    background-color: #1a1820;
-}
-
-.container{
-    display: grid;
-    grid-template-columns: repeat(autofit, minmax(250px, 1fr));
-    grid-gap: 10px;
-    justify-content: center;
-    align-items: center;
-}
-
-.splash{
-    text-align: center;
-    background-color: #23212C;
-    border-radius: 5px;
-    /* margin: 10% auto; */
-    padding: 30px;
-    color: #c0c0c0;
-}
-
-p {
-    width: 250px;
-    min-width: 250px;
-}
-
 @keyframes wiggle {
     0%      { transform: rotate(1deg);}
     10%     { transform: rotate(-3deg);}
@@ -39,6 +11,87 @@ p {
     90%     { transform: none;}
     100%    { transform: none;}
 }
+
+@keyframes slidein {
+    0% {
+        transform: translateX(1000%);
+        opacity: 0;
+        display: none;
+    }
+
+    100% {
+        transform: translateX(0%);
+        opacity: 1;
+        display: block;
+    }   
+}
+
+@keyframes waitoffscreen {
+    0%      {transform: translateX(1000%);}
+    100%    {transform: translateX(1000%);}
+}
+
+
+body {
+    font-family: "Ubuntu", serif;
+    padding: 50px;
+    background-color: #1a1820;
+    overflow-x: hidden;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(4, 310px);
+    grid-gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    text-align: center;
+    height: 660px;
+    background-color: #23212C;
+    border-radius: 5px;
+    margin-top: 10%;
+    padding: 30px;
+    color: #c0c0c0;
+    animation: slidein 0.5s ease-out;
+    transition: 0.25s;
+}
+
+.box:hover {
+    margin-top: 3%;
+}
+
+.b {
+    animation: waitoffscreen, slidein;
+    animation-duration: 0.25s, 0.5s;
+    animation-delay: 0s, 0.25s;
+    transition-timing-function: linear, ease-out;
+    background-color: #535159;
+}
+
+.c {
+    animation: waitoffscreen, slidein;
+    animation-duration: 0.5s, 0.5s;
+    animation-delay: 0s, 0.5s;
+    transition-timing-function: linear, ease-out;
+    background-color: #87868b;
+}
+
+.d {
+    animation: waitoffscreen, slidein;
+    animation-duration: 0.75s, 0.5s;
+    animation-delay: 0s, 0.75s;
+    transition-timing-function: linear, ease-out;
+    background-color: #c0c0c0;
+}
+
+p {
+    width: 250px;
+    min-width: 250px;
+}
+
 
 .wiggle {
     animation-name: wiggle;

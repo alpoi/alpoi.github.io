@@ -13,19 +13,28 @@ layout: null
 </head>
 <body>
     <div class="container">
-    <div class="splash">
-    <img src="honeybee_ios.png">
-    <h1 style="margin: 30px 0 0 0;">Angus Pointer</h1>
-    <h2>MMath Graduate</h2>
-    <p> A committed and passionate mathematics graduate, looking to apply learned expertise to
-        modern problems and research. With an aptitude for independent learning, I will rise to any
-        challenge laid before me. I'm currently learning Python, among other things. </p>
-    <span class="wiggle"><a above-tooltip="Click to read my dissertation!" href="dissertation.pdf"><i class="fas fa-graduation-cap wiggle"></i></a></span>
-    <hr>
-    <div class="links">
-    <a href="https://www.linkedin.com/in/alpointer/"><i class="fab fa-linkedin"></i></a>
-    <a href="https://github.com/alpoi/"><i class="fab fa-github-square"></i></a>
-    <a href="mailto:al.pointer@outlook.com"><i class="fas fa-envelope-square"></i></a>
-    </div>
-    </div>
+        <div class="box a">
+        <img src="honeybee_ios.png">
+        <h1 style="margin: 30px 0 0 0;">Angus Pointer</h1>
+        <h2>MMath Graduate</h2>
+        <p> A committed and passionate mathematics graduate, looking to apply learned expertise to
+            modern problems and research. With an aptitude for independent learning, I will rise to any
+            challenge laid before me. I'm currently learning Python, among other things. </p>
+        <span class="wiggle"><a above-tooltip="Click to read my dissertation!" href="dissertation.pdf"><i class="fas fa-graduation-cap wiggle"></i></a></span>
+        <hr>
+            <div class="links">
+                <a href="https://www.linkedin.com/in/alpointer/"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/alpoi/"><i class="fab fa-github-square"></i></a>
+                <a href="mailto:al.pointer@outlook.com"><i class="fas fa-envelope-square"></i></a>
+            </div>
+        </div>
+        <div class="box b">
+        <h1></h1>
+        </div>
+        <div class="box c">
+        <h1></h1>
+        </div>
+        <div class="box d">
+        <h1></h1>
+        </div>
     </div>
