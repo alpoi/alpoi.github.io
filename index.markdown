@@ -9,37 +9,51 @@ layout: null
     <meta name="viewport" content="width=device-width, user-scalable=no">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:wght@300">
     <link rel="stylesheet" href="splash.css">
-    <link rel="stylesheet" href="above.css">
     <link rel="stylesheet" href="icons/css/all.css">
+    <link rel="stylesheet" href="tooltip.css">
 </head>
 <body>
 <div class="top-mobile-fade"></div>
     <div class="container">
         <div class="box a">
-        <img src="honeybee_ios.png">
-        <h1 style="margin: 30px 0 0 0;">Angus Pointer</h1>
-        <h2>MMath Graduate</h2>
-        <p> A committed and passionate mathematics graduate, looking to apply learned expertise to
-            modern problems and research. With an aptitude for independent learning, I will rise to any
-            challenge laid before me. I'm currently learning Python, among other things. </p>
-        <span class="wiggle"><a above-tooltip="Click to read my dissertation!" href="dissertation.pdf"><i class="fas fa-graduation-cap wiggle"></i></a></span>
-        <hr>
+            <img src="honeybee_ios.png">
+            <h1 style="margin: 30px 0 0 0;">Angus Pointer</h1>
+            <h2>MMath Graduate</h2>
+            <p> A committed and passionate mathematics graduate, looking to apply learned expertise to
+                modern problems and research. With an aptitude for independent learning, I will rise to any
+                challenge laid before me. </p>
+<!-- -->
+            <p> <strong>Languages</strong> <br>
+                HTML • CSS • Python </p>
+            <p> <strong>Currently Learning</strong> <br>
+                JavaScript </p>
             <div class="links">
-                <a above-tooltip="Connect on LinkedIn" href="https://www.linkedin.com/in/alpointer/"><i class="fab fa-linkedin"></i></a>
-                <a above-tooltip="GitHub" href="https://github.com/alpoi/"><i class="fab fa-github-square"></i></a>
-                <a above-tooltip="e-mail" href="mailto:al.pointer@outlook.com"><i class="fas fa-envelope-square"></i></a>
+                <hr>
+                <div class="tooltip" onmouseover="tooltip(this)"><a href="https://www.linkedin.com/in/alpointer/"><i class="icon fab fa-linkedin-in"></i></a>
+                    <span class="tooltiptext">LinkedIn</span>
+                </div>
+                <div class="tooltip" onmouseover="tooltip(this)"><a href="https://github.com/alpoi/"><i class="icon fab fa-github"></i></a>
+                    <span class="tooltiptext">GitHub</span>
+                </div>
+                <div class="tooltip" onmouseover="tooltip(this)"><a href="mailto:al.pointer@outlook.com"><i class="icon fas fa-at"></i></a>
+                    <span class="tooltiptext">E-mail</span>
+                </div>
+                <div class="tooltip" onmouseover="tooltip(this)"><a href="dissertation.pdf"><i class="fas fa-scroll"></i></a>
+                    <span class="tooltiptext">Dissertation</span>
+                </div>
             </div>
         </div>
         <div class="box b">
-        <h1></h1>
+            <h1></h1>
         </div>
         <div class="box c">
-        <h1></h1>
+            <h1></h1>
         </div>
         <div class="box d">
-        <h1></h1>
+            <h1></h1>
         </div>
     </div>
-    <div class="bot-mobile-fade"></div>
-    </body>
-    </html>
+        <div class="bot-mobile-fade"></div>
+    <script src="js/tooltip.js"></script>
+</body>
+</html>
