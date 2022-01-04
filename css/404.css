@@ -1,0 +1,39 @@
+body {
+    font-family: "Ubuntu", serif;
+    background-color: #c0c0c0;
+}
+
+.errImage {
+    position: absolute;
+    bottom: 0;
+    background-color: #c0c0c0;
+    padding-left: 10%;
+}
+.container {
+    height: 50%;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.errMessage {
+    z-index: 100;
+    position: absolute;
+    font-size: 10em;
+    color: #807e7e;
+}
+
+.back {
+    font-size: 5em;
+}
+
+h1 {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #807e7e;
+    -webkit-text-stroke: 1px black;
+}

@@ -5,18 +5,18 @@ layout: null
 
 <html>
 <head>
-    <title>Portfolio - Angus Pointer</title>
+    <title>Portfolio • Angus Pointer</title>
     <meta name="viewport" content="width=device-width, user-scalable=no">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:wght@300">
-    <link rel="stylesheet" href="splash.css">
+    <link rel="stylesheet" href="css/splash.css">
     <link rel="stylesheet" href="icons/css/all.css">
-    <link rel="stylesheet" href="tooltip.css">
+    <link rel="stylesheet" href="css/tooltip.css">
 </head>
 <body>
 <div class="top-mobile-fade"></div>
     <div class="container">
         <div class="box a">
-            <img src="honeybee_ios.png">
+            <img src="img/honeybee_ios.png">
             <h1 style="margin: 30px 0 0 0;">Angus Pointer</h1>
             <h2>MMath Graduate</h2>
             <p> A committed and passionate mathematics graduate, looking to apply learned expertise to
