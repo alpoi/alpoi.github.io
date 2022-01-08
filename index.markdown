@@ -26,7 +26,7 @@ layout: null
             <p> <strong>Languages</strong> <br>
                 HTML • CSS • Python </p>
             <p> <strong>Currently Learning</strong> <br>
-                JavaScript </p>
+                JavaScript • C#</p>
             <div class="links">
                 <hr>
                 <div class="tooltip" onmouseover="tooltip(this)"><a href="https://www.linkedin.com/in/alpointer/"><i class="icon fab fa-linkedin-in"></i></a>
