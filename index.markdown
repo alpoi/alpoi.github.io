@@ -24,9 +24,10 @@ layout: null
                 challenge laid before me. </p>
 <!-- -->
             <p> <strong>Languages</strong> <br>
-                HTML • CSS • Python </p>
-            <p> <strong>Currently Learning</strong> <br>
-                JavaScript • C#</p>
+                HTML • CSS • Python <br>
+                JavaScript • C# </p>
+            <!--<p> <strong>Currently Learning</strong> <br>
+                </p>-->
             <div class="links">
                 <hr>
                 <div class="tooltip" onmouseover="tooltip(this)"><a href="https://www.linkedin.com/in/alpointer/"><i class="icon fab fa-linkedin-in"></i></a>
