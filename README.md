@@ -1,6 +1,6 @@
 <div align="center">
 
-# [angus.buzz](angus.buzz)
+# [angus.buzz](https://angus.buzz)
 
 welcome to my website, hope you like it
 
