@@ -1,0 +1,140 @@
+{
+  "candidate-name": "Angus Pointer",
+  "job-title": "Software Engineer",
+  "links": [
+    {
+      "display": "me@angus.buzz",
+      "destination": "mailto:me@angus.buzz"
+    },
+    {
+      "display": "github.com/alpoi",
+      "destination": "https://github.com/alpoi"
+    },
+    {
+      "display": "linkedin.com/in/alpoi",
+      "destination": "https://linkedin.com/in/alpoi"
+    },
+    {
+      "display": "angus.buzz",
+      "destination": "https://angus.buzz"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Summary",
+      "subsections": [
+        {
+          "text": "Highly motivated and experienced engineer with a strong background in building, deploying, and maintaining scalable and reliable systems. Proven ability to automate processes, optimize performance, and lead technical initiatives within fast-paced environments. Expertise across a diverse technology stack including Go, Python, C\\#, Terraform, AWS, and data technologies like Elasticsearch and Redis."
+        }
+      ]
+    },
+    {
+      "title": "Skills",
+      "subsections": [
+        {
+          "items": {
+            "Programming Languages": "Go, Python, C#, Java, Rust, Bash, TypeScript (Backend and Frontend)",
+            "Cloud and Infrastructure": "AWS (Lambda, ECS, S3, etc.), Terraform, CloudFormation, Docker, Temporal",
+            "Databases and Data Stores": "MongoDB, DynamoDB, Elasticsearch, Redis, SQL/RDS, Milvus",
+            "Development Practices": "Version Control (Git), Agile (Jira, Scrum), CI/CD (GitHub Actions, AWS CodePipeline), Unit Testing (pytest, XUnit), Integration Testing (testcontainers), Load Testing (k6)",
+            "Observability and Monitoring": "Elastic APM, OpenTelemetry, Grafana, Prometheus, Incident.io"
+          }
+        }
+      ]
+    },
+    {
+      "title": "Work Experience",
+      "subsections": [
+        {
+          "title": "Senior Platform Engineer",
+          "subtitle": "Xapien",
+          "location": "London",
+          "from": {
+            "year": 2024,
+            "month": 12
+          },
+          "to": {
+            "year": 2025,
+            "month": 6
+          },
+          "items": [
+            "Designed and implemented CI/CD pipelines with GitHub Actions, integrating automated testing, Terraform validation, semantic release, and infrastructure deployment across multiple environments and tenants.",
+            "Led Agile ceremonies, including sprint planning, backlog grooming, and retrospectives.",
+            "Architected infrastructure for a microservice-based entity resolution project.",
+            "Developed a content pipeline for web scraping (Playwright, TypeScript), document conversion (Python, LLMs), and image processing (Go, libvips), optimized to produce LLM-friendly output.",
+            "Founded and led the Code Standards Group, improving code clarity and review efficiency with industry-aligned style guides.",
+            "Served as SME for Temporal, creating extension libraries and optimising production components.",
+            "Implemented Elastic APM and OpenTelemetry logging, developing reusable libraries, streamlining adoption.",
+            "Built extensible ECS container healthcheck libraries.",
+            "Represented Xapien at Elasticon and Temporal Replay, showcasing expertise and fostering community engagement."
+          ]
+        },
+        {
+          "title": "Systems and Infrastructure Engineer",
+          "subtitle": "Xapien",
+          "location": "London",
+          "from": {
+            "year": 2023,
+            "month": 5
+          },
+          "to": {
+            "year": 2024,
+            "month": 12
+          },
+          "items": [
+            "Streamlined deployments by migrating legacy CloudFormation stacks to modular, versioned Terraform.",
+            "Deployed and maintained Fluenci™ (our NLP pipeline) using optimized AMIs for GPU and Inferentia models.",
+            "Enhanced Photon, an open-source address parsing service (Java), by migrating from integrated Elasticsearch to external cluster support, optimizing read-only workloads with k6 testing.",
+            "Built a new IDAM system with AWS Cognito and RDS, migrating users from Auth0.",
+            "Rebuilt a high-performance cache access service, achieving over 1M TPM with a low-latency Go API.",
+            "Configured OpsGenie and Incident.io alerting, participating in on-call rotations to triage incidents."
+          ]
+        },
+        {
+          "title": "Technical Test Engineer",
+          "subtitle": "Xapien",
+          "location": "London",
+          "from": {
+            "year": 2022,
+            "month": 5
+          },
+          "to": {
+            "year": 2023,
+            "month": 5
+          },
+          "items": [
+            "Automated regression testing using Python and React tools, streamlining QA processes.",
+            "Developed CRISPE (Customer Report Indicators Serving Priority Estimation) in C#, enabling Customer Success to effectively prioritize manual report reviews.",
+            "Built a Kibana dashboard for Sales and Customer Success, leveraging an AWS Lambda triggered by an event rule for automated data ingestion to query internal data stores and display key user metrics."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Education",
+      "subsections": [
+        {
+          "title": "Mathematics MMath (1st Class)",
+          "subtitle": "University of Nottingham",
+          "from": {
+            "year": 2017,
+            "month": 9
+          },
+          "to": {
+            "year": 2021,
+            "month": 6
+          },
+          "items": [
+            "Thesis title: An introduction to algebras and space time block coding."
+          ]
+        }
+      ]
+    }
+  ],
+  "style": {
+    "font": "Noto Sans",
+    "font-size": "7pt",
+    "header-color": "#000035",
+    "divider-color": "#800000"
+  }
+}
