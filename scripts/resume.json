@@ -63,9 +63,9 @@
             "Architected infrastructure for a microservice-based entity resolution project.",
             "Developed a content pipeline for web scraping (Playwright, TypeScript), document conversion (Python, LLMs), and image processing (Go, libvips), optimized to produce LLM-friendly output.",
             "Founded and led the Code Standards Group, improving code clarity and review efficiency with industry-aligned style guides.",
-            "Served as SME for Temporal, creating extension libraries (Python, Go, C#) and optimising production components.",
-            "Implemented Elastic APM and OpenTelemetry logging, developing reusable libraries (Python, Go, C#) for streamlined adoption.",
-            "Built extensible ECS container healthcheck libraries (Python, Go, C#).",
+            "Served as SME for Temporal, creating extension libraries and optimising production components.",
+            "Implemented Elastic APM and OpenTelemetry logging, developing reusable libraries, streamlining adoption.",
+            "Built extensible ECS container healthcheck libraries.",
             "Represented Xapien at Elasticon and Temporal Replay, showcasing expertise and fostering community engagement."
           ]
         },
@@ -82,7 +82,7 @@
             "month": 12
           },
           "items": [
-            "Streamlined deployments by migrating legacy CloudFormation stacks to modular Terraform with independent versioning.",
+            "Streamlined deployments by migrating legacy CloudFormation stacks to modular, versioned Terraform.",
             "Deployed and maintained Fluenci™ (our NLP pipeline) using optimized AMIs for GPU and Inferentia models.",
             "Enhanced Photon, an open-source address parsing service (Java), by migrating from integrated Elasticsearch to external cluster support, optimizing read-only workloads with k6 testing.",
             "Built a new IDAM system with AWS Cognito and RDS, migrating users from Auth0.",
@@ -103,7 +103,7 @@
             "month": 5
           },
           "items": [
-            "Automated regression testing using Python and React tools, reducing manual QA effort and streamlining processes.",
+            "Automated regression testing using Python and React tools, streamlining QA processes.",
             "Developed CRISPE (Customer Report Indicators Serving Priority Estimation) in C#, enabling Customer Success to effectively prioritize manual report reviews.",
             "Built a Kibana dashboard for Sales and Customer Success, leveraging an AWS Lambda triggered by an event rule for automated data ingestion to query internal data stores and display key user metrics."
           ]
@@ -133,7 +133,7 @@
   ],
   "style": {
     "font": "Noto Sans",
-    "font-size": "8pt",
+    "font-size": "7pt",
     "header-color": "#000035",
     "divider-color": "#800000"
   }
