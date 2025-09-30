@@ -1,0 +1,48 @@
+name: Build resume with Typst
+
+on:
+  workflow_dispatch:
+  pull_request:
+    paths:
+      - "scripts/resume.json"
+      - "scripts/resume.typ"
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5
+        with:
+          ref: ${{ github.head_ref }}
+
+      - name: Setup typst
+        uses: typst-community/setup-typst@v3
+        with:
+          typst-version: latest
+
+      - name: Download fonts
+        run: |
+          mkdir -p fonts
+          if [ ! -f "./fonts/NotoSans-Regular.ttf" ]; then
+            curl -sL https://github.com/googlefonts/noto-fonts/raw/main/hinted/ttf/NotoSans/NotoSans-Regular.ttf -o ./fonts/NotoSans-Regular.ttf
+            curl -sL https://github.com/googlefonts/noto-fonts/raw/main/hinted/ttf/NotoSans/NotoSans-Bold.ttf -o ./fonts/NotoSans-Bold.ttf
+            curl -sL https://github.com/googlefonts/noto-fonts/raw/main/hinted/ttf/NotoSans/NotoSans-Italic.ttf -o ./fonts/NotoSans-Italic.ttf
+            curl -sL https://github.com/googlefonts/noto-fonts/raw/main/hinted/ttf/NotoSans/NotoSans-BoldItalic.ttf -o ./fonts/NotoSans-BoldItalic.ttf
+          fi
+
+      - name: Compile pdf
+        run: typst compile --font-path ./ --root ./ scripts/resume.typ static/resume.pdf
+
+      - name: Commit resume
+        run: |
+          git config --global user.name "alpoi[bot]"
+          git config --global user.email "me@angus.buzz"
+          git add static/resume.pdf
+          git commit -m "Update resume"
+          git push
+
+
