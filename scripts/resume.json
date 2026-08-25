@@ -1,6 +1,6 @@
 {
   "candidate-name": "Angus Pointer",
-  "job-title": "Software Engineer",
+  "job-title": "Senior Software Engineer",
   "links": [
     {
       "display": "me@angus.buzz",
@@ -24,27 +24,58 @@
       "title": "Summary",
       "subsections": [
         {
-          "text": "Highly motivated and experienced engineer with a strong background in building, deploying, and maintaining scalable and reliable systems. Proven ability to automate processes, optimize performance, and lead technical initiatives within fast-paced environments. Expertise across a diverse technology stack including Go, Python, C\\#, Terraform, AWS, and data technologies like Elasticsearch and Redis."
+          "text": "Platform and backend engineer with a mathematics background, shipping production systems in Python, Go, C\\#, Java, and TypeScript. Progressed from test engineering to platform architecture in three years at a scaling startup, spanning Terraform migrations, high-throughput Go services, and LLM content pipelines."
         }
       ]
     },
     {
-      "title": "Skills",
+      "title": "Technical Skills",
       "subsections": [
         {
           "items": {
-            "Programming Languages": "Go, Python, C#, Java, Rust, Bash, TypeScript (Backend and Frontend)",
-            "Cloud and Infrastructure": "AWS (Lambda, ECS, S3, etc.), Terraform, CloudFormation, Docker, Temporal",
-            "Databases and Data Stores": "MongoDB, DynamoDB, Elasticsearch, Redis, SQL/RDS, Milvus",
-            "Development Practices": "Version Control (Git), Agile (Jira, Scrum), CI/CD (GitHub Actions, AWS CodePipeline), Unit Testing (pytest, XUnit), Integration Testing (testcontainers), Load Testing (k6)",
-            "Observability and Monitoring": "Elastic APM, OpenTelemetry, Grafana, Prometheus, Incident.io"
+            "Languages": "Python, Go, C#, Java, TypeScript",
+            "Infrastructure": "Kubernetes, AWS, Terraform, CloudFormation, Docker, Temporal",
+            "Data": "MongoDB, DynamoDB, Elasticsearch, Redis, SQL/RDS, Milvus",
+            "DevOps": "Git, SVN, Jira, Scrum, CI/CD (GitHub Actions, AWS CodePipeline), Unit Testing (pytest, XUnit), Integration Testing (testcontainers), Load Testing (k6)",
+            "Observability": "Elastic APM, OpenTelemetry, Grafana, Prometheus, Loki, Incident.io"
           }
         }
       ]
     },
     {
-      "title": "Work Experience",
+      "title": "Experience",
       "subsections": [
+        {
+          "title": "Consultant Engineer",
+          "subtitle": "Container Solutions",
+          "location": "Remote",
+          "from": {
+            "year": 2026,
+            "month": 1
+          },
+          "items": [
+            "Developed a migration strategy from SVN to Git for a highly customisable logistics application with hundreds of clients, which is now being adopted.",
+            "Led a team of 7 engineers to productionise an early-stage screening platform; fully typed Python services on Kubernetes, with full tracing and logging, now serving pilot customers.",
+            "Designed and implemented a SQL schema combining 10+ related DynamoDB tables, allowing for advanced queries and relational integrity."
+          ]
+        },
+        {
+          "title": "Software Engineer (Contract)",
+          "subtitle": "DataAnnotation",
+          "location": "Remote",
+          "from": {
+            "year": 2025,
+            "month": 6
+          },
+          "to": {
+            "year": 2026,
+            "month": 1
+          },
+          "items": [
+            "Created golden data for coding models over hundreds of scenarios, with a focus on correctness, readability, and maintainability.",
+            "Evaluated performance of agentic coding tools, such as Cline and Windsurf, identifying improvements and regressions."
+          ]
+        },
         {
           "title": "Senior Platform Engineer",
           "subtitle": "Xapien",
@@ -58,15 +89,12 @@
             "month": 6
           },
           "items": [
-            "Designed and implemented CI/CD pipelines with GitHub Actions, integrating automated testing, Terraform validation, semantic release, and infrastructure deployment across multiple environments and tenants.",
-            "Led Agile ceremonies, including sprint planning, backlog grooming, and retrospectives.",
-            "Architected infrastructure for a microservice-based entity resolution project.",
-            "Developed a content pipeline for web scraping (Playwright, TypeScript), document conversion (Python, LLMs), and image processing (Go, libvips), optimized to produce LLM-friendly output.",
-            "Founded and led the Code Standards Group, improving code clarity and review efficiency with industry-aligned style guides.",
+            "Designed and implemented CI/CD pipelines with GitHub Actions, with automated linting, formatting, testing, releases, builds, and deployment across multiple environments and tenants.",
+            "Architected infrastructure for an entity resolution project, featuring 20+ distinct microservices in ECS, using Milvus for vector search.",
+            "Developed a content pipeline for web scraping (Playwright, TypeScript), document conversion (Python, LLMs), and image processing (Go, libvips), optimised to produce LLM-friendly output.",
+            "Founded and led the Code Standards Group, improving code clarity and review efficiency with industry-aligned style guides across 100+ repositories.",
             "Served as SME for Temporal, creating extension libraries and optimising production components.",
-            "Implemented Elastic APM and OpenTelemetry logging, developing reusable libraries, streamlining adoption.",
-            "Built extensible ECS container healthcheck libraries.",
-            "Represented Xapien at Elasticon and Temporal Replay, showcasing expertise and fostering community engagement."
+            "Implemented Elastic APM and OpenTelemetry logging, developing reusable libraries for ease of integration."
           ]
         },
         {
@@ -82,12 +110,12 @@
             "month": 12
           },
           "items": [
-            "Streamlined deployments by migrating legacy CloudFormation stacks to modular, versioned Terraform.",
-            "Deployed and maintained Fluenci™ (our NLP pipeline) using optimized AMIs for GPU and Inferentia models.",
-            "Enhanced Photon, an open-source address parsing service (Java), by migrating from integrated Elasticsearch to external cluster support, optimizing read-only workloads with k6 testing.",
-            "Built a new IDAM system with AWS Cognito and RDS, migrating users from Auth0.",
+            "Streamlined deployments by migrating 10,000+ lines of legacy CloudFormation to modular, versioned Terraform.",
+            "Deployed and maintained an NLP pipeline using optimised AMIs for GPU and Inferentia models, reducing spin up time from ~30 minutes to ~2 minutes, allowing scaling to zero.",
+            "Enhanced Photon, an open-source address parsing service (Java), by migrating from integrated Elasticsearch to external cluster support, optimising read-only workloads peaking at 10,000 requests per second over a 2TB data set.",
+            "Built a new IDAM system with AWS Cognito and RDS, migrating from Auth0, serving thousands of users.",
             "Rebuilt a high-performance cache access service, achieving over 1M TPM with a low-latency Go API.",
-            "Configured OpsGenie and Incident.io alerting, participating in on-call rotations to triage incidents."
+            "Configured OpsGenie and Incident.io alerting, leading and participating in on-call rotations to triage incidents."
           ]
         },
         {
@@ -103,9 +131,9 @@
             "month": 5
           },
           "items": [
-            "Automated regression testing using Python and React tools, streamlining QA processes.",
-            "Developed CRISPE (Customer Report Indicators Serving Priority Estimation) in C#, enabling Customer Success to effectively prioritize manual report reviews.",
-            "Built a Kibana dashboard for Sales and Customer Success, leveraging an AWS Lambda triggered by an event rule for automated data ingestion to query internal data stores and display key user metrics."
+            "Automated regression testing using Python and React tools, more than halving QA testing time.",
+            "Developed CRISPE (Customer Report Indicators Serving Priority Estimation) in C#, enabling Customer Success to effectively prioritise manual report reviews across 500+ daily reports.",
+            "Built a Kibana dashboard for Sales and Customer Success, with automated event ingestion, displaying key user metrics."
           ]
         }
       ]
@@ -133,7 +161,7 @@
   ],
   "style": {
     "font": "Noto Sans",
-    "font-size": "7pt",
+    "font-size": "10pt",
     "header-color": "#000035",
     "divider-color": "#800000"
   }
