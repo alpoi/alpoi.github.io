@@ -34,10 +34,12 @@
         {
           "items": {
             "Languages": "Python, Go, C#, Java, TypeScript",
-            "Infrastructure": "Kubernetes, AWS, Terraform, CloudFormation, Docker, Temporal",
-            "Data": "MongoDB, DynamoDB, Elasticsearch, Redis, SQL/RDS, Milvus",
-            "DevOps": "Git, SVN, Jira, Scrum, CI/CD (GitHub Actions, AWS CodePipeline), Unit Testing (pytest, XUnit), Integration Testing (testcontainers), Load Testing (k6)",
-            "Observability": "Elastic APM, OpenTelemetry, Grafana, Prometheus, Loki, Incident.io"
+            "Infrastructure": "Kubernetes (Helm, Flux), AWS, Terraform, CloudFormation, Docker",
+            "Architecture": "Microservices, event-driven systems, distributed workflows (Temporal), API design, schema design",
+            "Data": "MongoDB, DynamoDB, Elasticsearch, Redis, SQL/RDS",
+            "AI/ML": "LLM application development, RAG and vector search (Milvus)",
+            "Tooling": "CI/CD (GitHub Actions, AWS CodePipeline), automated testing, load testing",
+            "Observability": "Elastic APM, OpenTelemetry, Grafana, Prometheus, Loki"
           }
         }
       ]
@@ -161,7 +163,7 @@
   ],
   "style": {
     "font": "Noto Sans",
-    "font-size": "10pt",
+    "font-size": "11pt",
     "header-color": "#000035",
     "divider-color": "#800000"
   }
