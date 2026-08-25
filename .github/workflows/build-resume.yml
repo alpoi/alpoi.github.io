@@ -4,6 +4,7 @@ on:
   workflow_dispatch:
   pull_request:
     paths:
+      - ".github/workflows/build-resume.yml"
       - "scripts/resume.json"
       - "scripts/resume.typ"
 
